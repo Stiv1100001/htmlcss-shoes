@@ -1,5 +1,6 @@
-/* RESET */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&family=Rubik+Mono+One&display=swap');
 
+/* RESET */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,37 +14,37 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Rubik Mono One';
     scroll-behavior: smooth;
+    min-width: 700px;
 }
 
 .navbar {
     position: fixed;
-    top: 0;
+    top: 20px;
     width: 100%;
     z-index: 2;
     text-align: right;
 }
 
-.navbar li {
+.navbar ul li {
     display: inline-block;
-    margin-right: 20px;
-    margin-top: 10px;
-    height: 40px;
-    width: 40px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 40px;
-
 }
 
-.navbar a {
-    display: block;
+.navbar ul li a {
     color: black;
-    text-align: center;
     text-decoration: none;
-    font-size: 17px;
-    font-weight: bold;
+    font-size: 15px;
+
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 60%;
+    padding: 10px 12px;
+
+    line-height: 50px;
+
+    margin: 30px 20px;
 }
 
 section.content {
@@ -52,22 +53,19 @@ section.content {
     width: 99vw;
 }
 
-.shoe {
+.shoe-wrapper {
+    font-size: 3vw;
+    text-align: center;
+    color: yellow;
+
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 40vw;
 }
 
-.title {
-    color: rgb(255, 255, 0);
-    font-size: 60px;
-    position: absolute;
-    bottom: 13vh;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
+.shoe-wrapper img {
+    width: 100%;
 }
 
 #three .title {
@@ -75,13 +73,13 @@ section.content {
 }
 
 #one {
-    background-color: rgb(255, 0, 0);
+    background-color: red;
 }
 
 #two {
-    background-color: rgb(0, 128, 0);
+    background-color: green;
 }
 
 #three {
-    background-color: rgb(255, 255, 0);
+    background-color: yellow;
 }
