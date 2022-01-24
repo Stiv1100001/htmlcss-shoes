@@ -13,9 +13,12 @@
     clear: both;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Rubik Mono One';
-    scroll-behavior: smooth;
     min-width: 700px;
 }
 
